@@ -8,77 +8,25 @@
   <script src="https://kit.fontawesome.com/1b130bdd87.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <!-- Navigation -->
   <nav>
     <ul>
       <li class="brand"><img src="logo.png" alt="Spotify-logo">Spotify</li>
-      <li>Home</li>
-      <li>About</li>
+      <li class="navItem active" data-section="home">Home</li>
+      <li class="navItem" data-section="songs">Songs</li>
+      <li class="navItem" data-section="about">About</li>
     </ul>
   </nav>
 
-  <div class="container">
+  <!-- Sections -->
+  <div class="container" id="contentContainer">
+    <!-- Default Home Section -->
     <h1 id="vibes">Soft Beats, Soft Hearts ✨</h1>
-
-    <div class="songItemContainer">
-      <div class="songList">
-        <img src="blue.jpg" alt="">
-        <span class="songName">Blue</span>
-        <span class="songlistplay">
-          <span class="timestamp">03:41 <i class="far fa-2x fa-play-circle songItemPlay"></i></span>
-        </span>
-      </div>
-
-      <div class="songList">
-        <img src="download (1).jpg" alt="">
-        <span class="songName">Dandelions</span>
-        <span class="songlistplay">
-          <span class="timestamp">04:00 <i class="far fa-2x fa-play-circle songItemPlay"></i></span>
-        </span>
-      </div>
-
-      <div class="songList">
-        <img src="Regalos Personalizados en 24h _ Transparent Gift.jpg" alt="">
-        <span class="songName">Night Changes</span>
-        <span class="songlistplay">
-          <span class="timestamp">03:50 <i class="far fa-2x fa-play-circle songItemPlay"></i></span>
-        </span>
-      </div>
-
-      <div class="songList">
-        <img src="I and that _no face_ guy in my dream_.jpg" alt="">
-        <span class="songName">One Dance</span>
-        <span class="songlistplay">
-          <span class="timestamp">03:30 <i class="far fa-2x fa-play-circle songItemPlay"></i></span>
-        </span>
-      </div>
-
-      <div class="songList">
-        <img src="Screenshot 2025-11-28 194622.png" alt="">
-        <span class="songName">Co2</span>
-        <span class="songlistplay">
-          <span class="timestamp">03:20 <i class="far fa-2x fa-play-circle songItemPlay"></i></span>
-        </span>
-      </div>
-
-      <div class="songList">
-        <img src="bg.jpg" alt="">
-        <span class="songName">Memories</span>
-        <span class="songlistplay">
-          <span class="timestamp">04:10 <i class="far fa-2x fa-play-circle songItemPlay"></i></span>
-        </span>
-      </div>
-
-      <div class="songList">
-        <img src="Screenshot 2025-11-28 194211.png" alt="">
-        <span class="songName">Bring me back</span>
-        <span class="songlistplay">
-          <span class="timestamp">03:55 <i class="far fa-2x fa-play-circle songItemPlay"></i></span>
-        </span>
-      </div>
-
-    </div>
+    <p>Welcome to your favorite songs collection!</p>
   </div>
 
+  <!-- Music Controls -->
   <div class="bottom">
     <input type="range" id="myProgressBar" min="0" max="100" value="0">
     <div class="icons">
